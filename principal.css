@@ -1,0 +1,171 @@
+/* Colores principales */
+:root {
+    --verde: #00704A;
+    --marron: #8B4513;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+  }
+  
+  /* General */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco);
+    color: var(--negro);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--verde);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blanco);
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: var(--blanco);
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: var(--marron);
+  }
+  
+  .user-info {
+    font-weight: bold;
+  }
+  
+  /* Banner */
+  .banner {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(var(--negro), var(--verde));
+    color: var(--blanco);
+  }
+  
+  .banner h2 {
+    font-size: 2.5rem;
+  }
+  
+  /* Sobre Nosotros */
+  .about {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .about-image {
+    width: 80%;
+    max-width: 400px;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-text {
+    margin-top: 1rem;
+  }
+  
+  /* Productos */
+  .services {
+    padding: 2rem;
+    background-color: var(--blanco);
+    color: var(--negro);
+    text-align: center;
+  }
+  
+  .services h3 {
+    font-size: 2rem;
+    color: var(--verde);
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Cambiamos a 3 columnas */
+    gap: 2rem;
+    /* Más espacio entre los productos */
+    justify-items: center;
+  }
+  
+  .product-card {
+    background-color: var(--blanco);
+    border: 1px solid var(--marron);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    width: 250px;
+    /* Ajuste para que el cuadro sea más espacioso */
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card h4 {
+    font-size: 1.2rem;
+    color: var(--verde);
+    margin: 0.5rem 0;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: var(--marron);
+  }
+  
+  
+  /* Reseñas */
+  .reviews {
+    padding: 2rem;
+    background-color: var(--verde);
+    color: var(--blanco);
+    text-align: center;
+  }
+  
+  .review {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+  }
+  
+  .review h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .review h4 span {
+    font-size: 0.9rem;
+    color: var(--marron);
+  }
+  
+  .review p {
+    font-style: italic;
+  }
+  footer {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+  }

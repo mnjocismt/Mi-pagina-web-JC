@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks - Página Principal</title>
+  <link rel="stylesheet" href="principal.css">
+</head>
+
+<body>
+  <!-- Menú de navegación -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <h1>Starbucks</h1>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#services">Productos</a></li>
+      <li><a href="#reviews">Reseñas</a></li>
+      <li><a href="#footer">Contacto</a></li>
+      <li class="user-info">Bienvenido, <span id="username"></span></li>
+      <li><button id="logoutButton" class="btn-logout">Cerrar Sesión</button></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <header class="banner">
+    <h2>Bienvenido a Starbucks</h2>
+    <p>Disfruta de los mejores cafés y experiencias inolvidables.</p>
+  </header>
+
+  <!-- Sobre Nosotros -->
+  <section id="about" class="about">
+    <h3>Sobre Nosotros</h3>
+    <img src="https://seaconbangkae.com/wp-content/uploads/2024/09/5326.png" alt="Café Starbucks" class="about-image">
+    <p class="about-text">
+      En Starbucks, creamos momentos significativos alrededor de una taza de café.
+      Nos esforzamos cada día por ofrecer el mejor café del mundo y brindar experiencias únicas a nuestros clientes.
+    </p>
+  </section>
+
+  <section id="services" class="services">
+    <h3>Nuestros Productos</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="data:image/jpeg;base64,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" alt="Latte">
+        <h4>Latte</h4>
+        <p>$4.99</p>
+      </div>
+      <div class="product-card">
+        <img src="data:image/jpeg;base64,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" alt="Cappuccino">
+        <h4>Cappuccino</h4>
+        <p>$5.49</p>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5xk00ukys5Rvu-Nqcia2dYwdmgucBmTJO6A&s" alt="Espresso">
+        <h4>Espresso</h4>
+        <p>$3.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc2azYatNOMAlF1NTDIkDTGdsOzrmsYFtJ2A&s" alt="Mocha">
+        <h4>Mocha</h4>
+        <p>$5.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://bunny-wp-pullzone-8lgzf5kyx3.b-cdn.net/assets/uploads/2023/08/sbx20190617-35641-caramelmacchiato-onwhite-corelib-srgb.png" alt="Caramel Macchiato">
+        <h4>Caramel Macchiato</h4>
+        <p>$6.49</p>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBqeiE77vNIPuft-Ucp38rL4URqgVyV_5zvPAA-9ID958n5u5yj4RyRptT-ltw1WhEXXk&usqp=CAU" alt="Frappuccino">
+        <h4>Frappuccino</h4>
+        <p>$5.99</p>
+      </div>
+      <div class="product-card">
+        <img src="data:image/jpeg;base64,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" alt="Americano">
+        <h4>Americano</h4>
+        <p>$3.49</p>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3sp1cehVEZ8AhCZ3Rc7dXB0JMaO7RhAWkPA&s" alt="Cold Brew">
+        <h4>Cold Brew</h4>
+        <p>$4.49</p>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgKj0cKSp-_v-uu_ZvcKCJIaI0_u-cqsEFw&s" alt="Iced Latte">
+        <h4>Iced Latte</h4>
+        <p>$5.29</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Reseñas -->
+  <section id="reviews" class="reviews">
+    <h3>Reseñas de Clientes</h3>
+    <div class="review">
+      <h4>María López <span>- Bogotá</span></h4>
+      <p>"El mejor café que he probado, el ambiente es único."</p>
+    </div>
+    <div class="review">
+      <h4>Carlos Pérez <span>- Medellín</span></h4>
+      <p>"Excelente atención y productos de calidad."</p>
+    </div>
+    <div class="review">
+      <h4>Ana Torres <span>- Cali</span></h4>
+      <p>"Siempre vuelvo por sus frappuccinos, ¡los amo!"</p>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer id="footer" class="footer">
+    <p>Síguenos en nuestras redes sociales</p>
+    <ul>
+      <li><a href="https://www.facebook.com/StarbucksColombia/?locale=es_LA">Facebook</a></li>
+      <li><a href="https://www.instagram.com/starbuckscol/?hl=es">Instagram</a></li>
+      <li><a href="https://twitter.com/starbuckscol?lang=es">Twitter</a></li>
+    </ul>
+  </footer>
+
+  <script src="principal.js"></script>
+</body>
+
+</html>
