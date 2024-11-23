@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Botón de cerrar sesión
     document.getElementById('logoutButton').addEventListener('click', () => {
-      window.location.href = 'login.html';
+      window.location.href = 'index.html';
     });
   });
   document.getElementById('logoutButton').addEventListener('click', () => {
