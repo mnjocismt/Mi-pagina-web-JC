@@ -8,3 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = 'login.html';
     });
   });
+  document.getElementById('logoutButton').addEventListener('click', () => {
+    // Redirige a la página de inicio de sesión
+    window.location.href = 'index.html';
+});
